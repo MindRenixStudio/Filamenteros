@@ -25,6 +25,7 @@
 		<p class="MainScreenTitles">YOUR 3D PRINTERS</p>
 
 		<div class="MainScreenItems">
+			<button style="height: 254px; width: 255px; position: absolute; border-radius: 20px; z-index: 1; background: transparent;"></button>
 			<img src="../ASSETS/printer.png" style="position: relative;margin: auto;height: 130px; top: 8px;">
 			<p style="font-family: Staatliches; margin: auto; font-size: 35px; position: relative; top: 15px;">ENDER 3 V2</p>
 			<p style="font-family: Staatliches; margin: auto; font-size: 25px; position: relative; top: 10px;">PRINTING</p>
@@ -32,6 +33,7 @@
 			<P style="font-family: Staatliches; margin: auto; font-size: 15px; position: relative; top: -8px; left: 70px;">29.10.2020 16:00</P>
 		</div>
 		<div class="MainScreenItems">
+			<button style="height: 254px; width: 255px; position: absolute; border-radius: 20px; z-index: 1; background: transparent;"></button>
 			<img src="../ASSETS/printer.png" style="position: relative;margin: auto;height: 130px; top: 8px;">
 			<p style="font-family: Staatliches; margin: auto; font-size: 35px; position: relative; top: 15px;">PRUSA MINI</p>
 			<p style="font-family: Staatliches; margin: auto; font-size: 25px; position: relative; top: 10px;">IDLE</p>
