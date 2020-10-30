@@ -1,4 +1,4 @@
-function Animate() {
+function AnimateMenu() {
 	//document.getElementById("LeftMenu").addEventListener("click", function () {
 	//	document.querySelector("#divMenuLeft").classList.add('.popUpMenu')
 	//})
@@ -10,6 +10,8 @@ function Animate() {
 	const leftMenuBT2 = document.getElementById("MBT2");
 	const leftMenuBT3 = document.getElementById("MBT3");
 	const leftMenuBT4 = document.getElementById("MBT4");
+
+	const addBTFilament = document.getElementById("addFilament");
 
 	if (leftMenu.classList.contains("divMenuLeftIdle") == true) {
 		leftMenu.classList.remove("divMenuLeftIdle");
@@ -71,7 +73,5 @@ function Animate() {
 			leftMenuBT4.classList.remove("PrintersBTPopBack");
 
 		}, millisecondsToWait);
-	}
-
-	
+	}	
 }
