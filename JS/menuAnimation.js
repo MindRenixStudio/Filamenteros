@@ -10,6 +10,7 @@ function AnimateMenu() {
 	const leftMenuBT2 = document.getElementById("MBT2");
 	const leftMenuBT3 = document.getElementById("MBT3");
 	const leftMenuBT4 = document.getElementById("MBT4");
+	const leftMenuBT5 = document.getElementById("MBT5");
 
 	const addBTFilament = document.getElementById("addFilament");
 
@@ -32,6 +33,9 @@ function AnimateMenu() {
 		leftMenuBT4.classList.add("PrintersBTPopUp");
 		leftMenuBT4.classList.remove("PrintersBTIdle");
 
+		leftMenuBT5.classList.add("PrintersBTPopUp");
+		leftMenuBT5.classList.remove("PrintersBTIdle");
+
 	}
 	else {
 		
@@ -53,6 +57,9 @@ function AnimateMenu() {
 		leftMenuBT4.classList.add("PrintersBTPopBack");
 		leftMenuBT4.classList.remove("PrintersBTPopUp");
 
+		leftMenuBT5.classList.add("PrintersBTPopBack");
+		leftMenuBT5.classList.remove("PrintersBTPopUp");
+
 		var millisecondsToWait = 600;
 
 		setTimeout(function() {
@@ -71,6 +78,9 @@ function AnimateMenu() {
 
 			leftMenuBT4.classList.add("PrintersBTIdle");
 			leftMenuBT4.classList.remove("PrintersBTPopBack");
+
+			leftMenuBT5.classList.add("PrintersBTIdle");
+			leftMenuBT5.classList.remove("PrintersBTPopBack");
 
 		}, millisecondsToWait);
 	}	

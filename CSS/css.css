@@ -39,6 +39,30 @@ body {
 	from {top: 72%;}
 	to {top: 90%;}
 }
+@keyframes clickAddInventory{
+	from {top: 90%;}
+	to {top: 63%;}
+}
+@keyframes clickAddInventoryHide{
+	from {top: 63%;}
+	to {top: 90%;}
+}
+@keyframes clickAddModel{
+	from {top: 90%;}
+	to {top: 54%;}
+}
+@keyframes clickAddModelHide{
+	from {top: 54%;}
+	to {top: 90%;}
+}
+@keyframes clickBTcalc{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+@keyframes showCalc{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
 
 #divMasterTop {
 	background-color: #424242;
@@ -174,26 +198,89 @@ body {
 	animation-fill-mode: forwards;
 	animation-duration: 0.3s;
 }
-#MainScreenFilament {
+.MainScreenFilament {
 	width: 58%;
 	height: 100%;
 	background-color: #6d6d6d;
 	margin: auto;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#MainScreenPrinter {
+.MainScreenPrinter {
 	width: 58%;
 	height: 100%;
 	background-color: #6d6d6d;
 	margin: auto;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#MainScreenInventory {
+.MainScreenModels {
 	width: 58%;
 	height: 100%;
 	background-color: #6d6d6d;
 	margin: auto;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.MainScreenInventory {
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.MainScreenFilamentHidden {
+	opacity: 0;
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	animation-name: clickBTcalc;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.MainScreenPrinterHidden {
+	opacity: 0;
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	animation-name: clickBTcalc;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.MainScreenModelsHidden {
+	opacity: 0;
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	animation-name: clickBTcalc;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.MainScreenInventoryHidden {
+	opacity: 0;
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	animation-name: clickBTcalc;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
 }
 .MainScreenTitles {
 	font-family: Staatliches;
@@ -216,6 +303,7 @@ body {
 	background-color: white;
 	border: 2px solid black;
 	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .AddFilamentBTPopUp {
 	background-color: #424242;
@@ -225,7 +313,7 @@ body {
 	position: fixed;
 	top: 90%;
 	left: 94%;
-	z-index: -1;
+	z-index: 1;
 
 	animation-name: clickAddFilament;
 	animation-fill-mode: forwards;
@@ -291,5 +379,184 @@ body {
 	position: fixed;
 	top: 90%;
 	left: 94%;
-	z-index: -1;
+	z-index: -2;
+}
+.AddInventoryBTPopUp {
+	background-color: #424242;
+	height: 80px;
+	width: 80px;
+	border-radius: 45px;
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	z-index: 21;
+
+	animation-name: clickAddInventory;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.AddInventoryBTPopBack {
+	background-color: #424242;
+	height: 80px;
+	width: 80px;
+	border-radius: 45px;
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	z-index: -2;
+
+	animation-name: clickAddInventoryHide;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.AddInventoryIdle {
+	background-color: #424242;
+	height: 80px;
+	width: 80px;
+	border-radius: 45px;
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	z-index: -2;
+}
+.AddModelBTPopUp {
+	background-color: #424242;
+	height: 80px;
+	width: 80px;
+	border-radius: 45px;
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	z-index: 21;
+
+	animation-name: clickAddModel;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.AddModelBTPopBack {
+	background-color: #424242;
+	height: 80px;
+	width: 80px;
+	border-radius: 45px;
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	z-index: -2;
+
+	animation-name: clickAddModelHide;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+}
+.AddModelIdle {
+	background-color: #424242;
+	height: 80px;
+	width: 80px;
+	border-radius: 45px;
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	z-index: -2;
+}
+.Calculator {
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	top: 0px;
+}
+.CalculatorTitle {
+	font-family: Staatliches;
+	font-size: 32px;
+	width: 210px;
+	display: block;
+	position: relative;
+	color: white;
+	top: 2px;
+	left: 40%;
+}
+.CalculatorInfo {
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	top: 0px;
+}
+.CalculatorInfoTitle {
+	font-family: Staatliches;
+	font-size: 32px;
+	width: 270px;
+	display: block;
+	position: relative;
+	color: white;
+	top: 2px;
+	left: 40%;
+}
+.CalculatorFilament {
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	top: 0px;
+}
+.CalculatorFilamentTitle {
+	font-family: Staatliches;
+	font-size: 32px;
+	width: 270px;
+	display: block;
+	position: relative;
+	color: white;
+	top: 2px;
+	left: 40%;
+}
+.CalculatorEnergyTitle {
+	font-family: Staatliches;
+	font-size: 32px;
+	width: 270px;
+	display: block;
+	position: relative;
+	color: white;
+	top: 2px;
+	left: 40%;
+}
+.CalculatorEnergy {
+	width: 58%;
+	height: 100%;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	top: 0px;
+}
+.CalculatorWorkTitle {
+	font-family: Staatliches;
+	font-size: 32px;
+	width: 270px;
+	display: block;
+	position: relative;
+	color: white;
+	top: 2px;
+	left: 40%;
+}
+.CalculatorWork {
+	width: 58%;
+	height: 348px;
+	background-color: #6d6d6d;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	top: 0px;
+}
+.CalculatorSelection {
+	font-size: 17px;
 }
